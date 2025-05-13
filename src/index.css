@@ -1,0 +1,278 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Updated colors for better contrast */
+  --primary-50: #e6f3ff;
+  --primary-100: #bde0ff;
+  --primary-200: #94cdff;
+  --primary-300: #6bb9ff;
+  --primary-400: #42a6ff;
+  --primary-500: #1992ff;
+  --primary-600: #0070cc;
+  --primary-700: #005299;
+  --primary-800: #003366;
+  --primary-900: #001433;
+  
+  --accent-500: #ff6b00;
+  --accent-600: #cc5500;
+  
+  /* Updated neutral colors for better readability */
+  --neutral-50: #ffffff;
+  --neutral-100: #f7f7f7;
+  --neutral-200: #e6e6e6;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-800;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight text-neutral-900;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  p {
+    @apply leading-relaxed text-neutral-700;
+  }
+
+  /* Updated text colors for better contrast */
+  .text-on-dark {
+    @apply text-white;
+  }
+  
+  .text-on-light {
+    @apply text-neutral-900;
+  }
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 border border-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-500;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-200;
+  }
+  
+  .section {
+    @apply py-12 md:py-20;
+  }
+  
+  .section-title {
+    @apply mb-4 text-center text-neutral-900;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-neutral-700 max-w-3xl mx-auto text-center mb-10;
+  }
+
+  /* Hero section with better contrast */
+  .hero-section {
+    @apply relative bg-primary-900;
+  }
+
+  .hero-content {
+    @apply relative z-10 text-white;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-primary-900 opacity-80;
+  }
+
+  /* Ensure headings in hero sections are white */
+  .hero-section h1,
+  .hero-section h2,
+  .hero-section h3,
+  .hero-section h4,
+  .hero-section h5,
+  .hero-section h6 {
+    @apply text-white;
+  }
+
+  /* Ensure headings in service-hero sections are white */
+  .service-hero h1,
+  .service-hero h2,
+  .service-hero h3,
+  .service-hero h4,
+  .service-hero h5,
+  .service-hero h6 {
+    @apply text-white;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* For react-slick carousel */
+.slick-prev, 
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 25px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+/* Service page specific styles */
+.service-hero {
+  @apply bg-primary-900 text-white relative overflow-hidden;
+}
+
+.service-hero::before {
+  content: '';
+  @apply absolute inset-0 bg-primary-900 opacity-80;
+}
+
+/* Add stronger text color rules for service-hero header */
+.service-hero h1 {
+  @apply text-white !important;
+  color: white !important;
+}
+
+.service-hero h2,
+.service-hero h3,
+.service-hero h4,
+.service-hero h5,
+.service-hero h6,
+.service-hero p {
+  @apply text-white;
+  color: white;
+}
+
+.service-content {
+  @apply relative z-10;
+}
+
+.service-benefits {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.service-benefit-card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.service-cta {
+  @apply bg-primary-50 border border-primary-100 rounded-lg p-8 text-center;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

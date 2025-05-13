@@ -1,0 +1,1244 @@
+import { Service, CategoryInfo } from '../types';
+import { 
+  Wrench, Home, Umbrella, Cog, TreePine, Hammer, 
+  Paintbrush, Building, Droplets, Thermometer, 
+  Waves, Lock, Grid3X3, Shovel, SquareGantt, Drill,
+  Warehouse, Twitch as Kitchen, Palette, Cloud, 
+  PenTool as Tools, Bath, Fan, Gauge, Trash2, 
+  AppWindow as Window, Key, Fence, Ruler, Brush, 
+  Folder, Flame, Shower, ScanLine, Scaling, FileQuestion
+} from 'lucide-react';
+
+export const serviceCategories: CategoryInfo[] = [
+  {
+    id: 'general-repairs',
+    title: 'General Repairs & Maintenance Auckland',
+    description: 'Professional repair and maintenance services for Auckland properties.'
+  },
+  {
+    id: 'healthy-homes',
+    title: 'Healthy Homes Solutions Auckland',
+    description: 'Create a healthier living environment with our specialized services in Auckland.'
+  },
+  {
+    id: 'insurance-work',
+    title: 'Insurance Reinstatement Work Auckland',
+    description: 'Expert restoration services for insurance claims in Auckland.'
+  },
+  {
+    id: 'installations',
+    title: 'Specialized Installations Auckland',
+    description: 'Professional installation services for Auckland properties.'
+  },
+  {
+    id: 'outdoor-maintenance',
+    title: 'Outdoor Maintenance Auckland',
+    description: 'Keep your Auckland outdoor spaces looking their best year-round.'
+  },
+  {
+    id: 'handyman',
+    title: 'Handyman Services Auckland',
+    description: 'Reliable handyman services throughout Auckland.'
+  }
+];
+
+export const services: Service[] = [
+  // General Repairs & Maintenance
+  {
+    id: 'general-repairs',
+    title: 'General Repairs',
+    slug: 'general-repairs',
+    description: 'Comprehensive building repair and maintenance services for Auckland properties, ensuring your home stays in optimal condition.',
+    icon: 'Building',
+    category: 'general-repairs',
+    features: [
+      'Comprehensive property repairs',
+      'Full structural assessments',
+      'Interior and exterior maintenance',
+      'Preventative maintenance programs',
+      'Emergency repair services'
+    ],
+    benefits: [
+      'Preserve property value',
+      'Prevent costly future repairs',
+      'Expert craftsmen and builders',
+      'Licensed and insured professionals',
+      'Comprehensive solutions'
+    ],
+    includes: [
+      'Initial inspection and assessment',
+      'Detailed quote and timeline',
+      'Professional repair work',
+      'Clean-up and final inspection',
+      'Warranty on workmanship'
+    ],
+    image: 'https://images.pexels.com/photos/8961001/pexels-photo-8961001.jpeg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'building-repairs',
+        title: 'Building Repairs',
+        slug: 'building-repairs',
+        description: 'Professional building repair services for Auckland homes and businesses, addressing structural issues, damage, and general wear and tear.',
+        features: [
+          'Structural repairs',
+          'Weather damage restoration',
+          'Foundation repairs',
+          'Rot and decay remediation',
+          'Exterior cladding repair'
+        ],
+        benefits: [
+          'Expert assessment and solutions',
+          'Quality workmanship guarantee',
+          'Licensed builders',
+          'Comprehensive repair services'
+        ],
+        image: 'https://images.pexels.com/photos/8961001/pexels-photo-8961001.jpeg',
+        metaDescription: 'Expert building repair services in Auckland. PropertyCare NZ provides professional solutions for all structural and building repair needs.',
+        metaKeywords: ['building repairs Auckland', 'structural repairs', 'property maintenance', 'building restoration Auckland']
+      },
+      {
+        id: 'kitchen-maintenance',
+        title: 'Kitchen Maintenance',
+        slug: 'kitchen-maintenance',
+        description: 'Comprehensive kitchen maintenance and repair services in Auckland to keep your kitchen functional, safe, and looking its best.',
+        features: [
+          'Cabinet repairs and adjustments',
+          'Countertop repairs and replacement',
+          'Sink and plumbing repairs',
+          'Tile and grout maintenance',
+          'Appliance installation'
+        ],
+        benefits: [
+          'Extend kitchen lifespan',
+          'Improve functionality',
+          'Prevent costly replacements',
+          'Maintain property value'
+        ],
+        image: 'https://images.pexels.com/photos/1358900/pexels-photo-1358900.jpeg',
+        metaDescription: 'Professional kitchen maintenance and repair services in Auckland. Keep your kitchen functional and looking great with PropertyCare NZ.',
+        metaKeywords: ['kitchen maintenance Auckland', 'kitchen repairs', 'cabinet repairs', 'countertop repairs Auckland', 'kitchen plumbing services']
+      },
+      {
+        id: 'bathroom-repairs',
+        title: 'Bathroom Repairs',
+        slug: 'bathroom-repairs',
+        description: 'Specialized bathroom repair and maintenance services for Auckland homes, addressing water damage, plumbing issues, and cosmetic repairs.',
+        features: [
+          'Leaking shower repairs',
+          'Toilet and basin repairs',
+          'Tile and grout restoration',
+          'Water damage remediation',
+          'Vanity and cabinet repairs'
+        ],
+        benefits: [
+          'Prevent water damage issues',
+          'Improve bathroom safety',
+          'Address moisture problems',
+          'Expert plumbing solutions'
+        ],
+        image: 'https://images.pexels.com/photos/6585758/pexels-photo-6585758.jpeg',
+        metaDescription: 'Expert bathroom repair services in Auckland. From leaking showers to tile restoration, PropertyCare NZ provides complete bathroom maintenance solutions.',
+        metaKeywords: ['bathroom repairs Auckland', 'leaking shower repair', 'tile restoration', 'bathroom maintenance', 'bathroom plumbing Auckland']
+      },
+      {
+        id: 'roof-gutter-repairs',
+        title: 'Roof & Gutter Repairs',
+        slug: 'roof-gutter-repairs',
+        description: 'Professional roof and gutter repair services in Auckland, protecting your home from water damage and maintaining your property\'s integrity.',
+        features: [
+          'Roof leak repairs',
+          'Gutter cleaning and repairs',
+          'Downpipe maintenance',
+          'Flashing repairs',
+          'Ridge cap resealing'
+        ],
+        benefits: [
+          'Prevent water damage',
+          'Extend roof lifespan',
+          'Improve drainage system',
+          'Regular maintenance options'
+        ],
+        image: 'https://images.pexels.com/photos/5778239/pexels-photo-5778239.jpeg',
+        metaDescription: 'Professional roof and gutter repair services in Auckland. Prevent water damage and maintain your home\'s integrity with PropertyCare NZ.',
+        metaKeywords: ['roof repairs Auckland', 'gutter cleaning Auckland', 'roof leaks', 'roof maintenance', 'downpipe repairs']
+      },
+      {
+        id: 'carpet-flooring-repairs',
+        title: 'Carpet & Flooring Repairs',
+        slug: 'carpet-flooring-repairs',
+        description: 'Expert carpet and flooring repair services in Auckland, restoring damaged floors and extending the life of your flooring investments.',
+        features: [
+          'Carpet patching and stretching',
+          'Laminate floor repairs',
+          'Hardwood floor restoration',
+          'Subfloor repairs',
+          'Vinyl flooring repairs'
+        ],
+        benefits: [
+          'Extend flooring lifespan',
+          'Save on replacement costs',
+          'Improve appearance',
+          'Fix safety hazards'
+        ],
+        image: 'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg',
+        metaDescription: 'Professional carpet and flooring repair services in Auckland. Restore damaged flooring and extend the life of your floors with PropertyCare NZ.',
+        metaKeywords: ['carpet repairs Auckland', 'flooring repairs', 'hardwood floor restoration', 'carpet stretching Auckland', 'vinyl floor repair']
+      },
+      {
+        id: 'windows-doors-repairs',
+        title: 'Windows & Doors Repairs',
+        slug: 'windows-doors-repairs',
+        description: 'Comprehensive window and door repair services in Auckland, improving security, energy efficiency, and the functionality of your home.',
+        features: [
+          'Window glass replacement',
+          'Door alignment repairs',
+          'Lock and handle repairs',
+          'Weatherstripping replacement',
+          'Sliding door track repairs'
+        ],
+        benefits: [
+          'Improve home security',
+          'Enhance energy efficiency',
+          'Restore proper operation',
+          'Reduce drafts and noise'
+        ],
+        image: 'https://images.pexels.com/photos/276689/pexels-photo-276689.jpeg',
+        metaDescription: 'Professional window and door repair services in Auckland. Improve security, energy efficiency, and functionality with PropertyCare NZ.',
+        metaKeywords: ['window repairs Auckland', 'door repairs', 'lock replacement', 'sliding door repairs Auckland', 'window glass replacement']
+      },
+      {
+        id: 'tiling',
+        title: 'Tiling Services',
+        slug: 'tiling',
+        description: 'Expert tiling services in Auckland for bathrooms, kitchens, floors, and outdoor areas, with professional installation and repair solutions.',
+        features: [
+          'Tile installation',
+          'Tile repair and replacement',
+          'Grout cleaning and repair',
+          'Waterproofing',
+          'Tile sealing'
+        ],
+        benefits: [
+          'Quality craftsmanship',
+          'Waterproof solutions',
+          'Long-lasting results',
+          'Wide range of tile options'
+        ],
+        image: 'https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg',
+        metaDescription: 'Professional tiling services in Auckland. From installation to repairs, PropertyCare NZ provides expert tiling solutions for bathrooms, kitchens, and more.',
+        metaKeywords: ['tiling services Auckland', 'bathroom tiling', 'kitchen tiling', 'tile repairs Auckland', 'tile installation']
+      },
+      {
+        id: 'gib-plastering',
+        title: 'GIB & Plastering',
+        slug: 'gib-plastering',
+        description: 'Professional GIB and plastering services in Auckland, repairing damaged walls, creating new partitions, and ensuring a perfect finish.',
+        features: [
+          'GIB installation',
+          'Plasterboard repairs',
+          'Hole and crack repairs',
+          'Stopping and finishing',
+          'Texture matching'
+        ],
+        benefits: [
+          'Seamless repairs',
+          'Expert finishing',
+          'Proper preparation for painting',
+          'Structural integrity'
+        ],
+        image: 'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg',
+        metaDescription: 'Professional GIB and plastering services in Auckland. Repair damaged walls and ensure perfect finishes with PropertyCare NZ.',
+        metaKeywords: ['GIB repairs Auckland', 'plastering services', 'wall repairs', 'plasterboard installation', 'GIB stopping and finishing']
+      }
+    ],
+    faq: [
+      {
+        question: "What types of general repairs do you offer in Auckland?",
+        answer: "We offer a comprehensive range of general repairs including building repairs, kitchen and bathroom maintenance, roof and gutter repairs, flooring and carpet repairs, window and door repairs, tiling, and GIB plastering services."
+      },
+      {
+        question: "How quickly can you respond to emergency repair needs?",
+        answer: "We prioritize emergency repairs and aim to respond within 24-48 hours for urgent issues. For severe emergencies that pose immediate risks, we offer same-day service when possible."
+      },
+      {
+        question: "Do you provide warranties on your repair work?",
+        answer: "Yes, all our repair work comes with a workmanship warranty. The specific warranty period varies depending on the type of repair, but typically ranges from 1-5 years."
+      },
+      {
+        question: "Can you handle insurance-related repairs?",
+        answer: "Absolutely. We have extensive experience working with insurance companies and can assist with documentation, assessments, and completing repairs to insurance standards."
+      }
+    ]
+  },
+  // Healthy Homes
+  {
+    id: 'healthy-homes',
+    title: 'Healthy Homes',
+    slug: 'healthy-homes',
+    description: 'Comprehensive solutions to meet Healthy Homes Standards and create a healthier, more comfortable living environment for Auckland properties.',
+    icon: 'Home',
+    category: 'healthy-homes',
+    features: [
+      'Healthy Homes compliance',
+      'Improved indoor air quality',
+      'Moisture control solutions',
+      'Energy efficiency improvements',
+      'Temperature regulation systems'
+    ],
+    benefits: [
+      'Meet legal requirements',
+      'Create healthier living spaces',
+      'Reduce energy costs',
+      'Prevent mold and moisture issues',
+      'Increase property value'
+    ],
+    includes: [
+      'Comprehensive property assessment',
+      'Customized healthy home plan',
+      'Professional installations',
+      'Compliance documentation',
+      'Post-installation testing'
+    ],
+    image: 'https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'insulation-installation',
+        title: 'Insulation Installation',
+        slug: 'insulation-installation',
+        description: 'Professional insulation installation services for Auckland homes, improving energy efficiency and meeting Healthy Homes Standards.',
+        features: [
+          'Ceiling insulation',
+          'Underfloor insulation',
+          'Wall insulation',
+          'Blanket and segment insulation',
+          'Healthy Homes compliance'
+        ],
+        benefits: [
+          'Reduce heating costs',
+          'Improve temperature regulation',
+          'Meet legal requirements',
+          'Enhance home comfort'
+        ],
+        image: 'https://images.pexels.com/photos/7937307/pexels-photo-7937307.jpeg',
+        metaDescription: 'Professional insulation installation services in Auckland. Improve energy efficiency and meet Healthy Homes Standards with PropertyCare NZ.',
+        metaKeywords: ['insulation installation Auckland', 'ceiling insulation', 'underfloor insulation', 'Healthy Homes insulation', 'wall insulation Auckland']
+      },
+      {
+        id: 'heating-installation',
+        title: 'Heating Installation',
+        slug: 'heating-installation',
+        description: 'Expert heating system installation services in Auckland, providing efficient heating solutions that comply with Healthy Homes Standards.',
+        features: [
+          'Heat pump installation',
+          'Fixed heater installation',
+          'Energy efficient systems',
+          'Heating capacity assessment',
+          'Healthy Homes compliant'
+        ],
+        benefits: [
+          'Efficient heating solutions',
+          'Reduced energy consumption',
+          'Even temperature distribution',
+          'Healthy Homes compliance'
+        ],
+        image: 'https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg',
+        metaDescription: 'Professional heating installation services in Auckland. Install energy-efficient heating systems that comply with Healthy Homes Standards.',
+        metaKeywords: ['heating installation Auckland', 'heat pump installation', 'fixed heater installation', 'Healthy Homes heating', 'energy efficient heating']
+      },
+      {
+        id: 'ventilation-systems',
+        title: 'Ventilation Systems',
+        slug: 'ventilation-systems',
+        description: 'Comprehensive ventilation system installation for Auckland properties, reducing moisture and improving indoor air quality.',
+        features: [
+          'Positive pressure systems',
+          'Heat recovery ventilation',
+          'Bathroom extraction fans',
+          'Kitchen rangehoods',
+          'Whole-home solutions'
+        ],
+        benefits: [
+          'Reduce indoor moisture',
+          'Prevent mold growth',
+          'Improve air quality',
+          'Remove allergens and pollutants'
+        ],
+        image: 'https://images.pexels.com/photos/4489732/pexels-photo-4489732.jpeg',
+        metaDescription: 'Professional ventilation system installation in Auckland. Improve indoor air quality and reduce moisture with PropertyCare NZ\'s ventilation solutions.',
+        metaKeywords: ['ventilation systems Auckland', 'home ventilation', 'moisture control', 'HRV systems', 'extraction fan installation']
+      },
+      {
+        id: 'drainage-guttering',
+        title: 'Drainage & Guttering',
+        slug: 'drainage-guttering',
+        description: 'Expert drainage and guttering solutions for Auckland properties, preventing moisture problems and protecting your home from water damage.',
+        features: [
+          'Gutter installation and repairs',
+          'Downpipe installation',
+          'Ground drainage solutions',
+          'Moisture barrier installation',
+          'Subfloor drainage'
+        ],
+        benefits: [
+          'Prevent water ingress',
+          'Protect foundations',
+          'Reduce dampness',
+          'Meet Healthy Homes requirements'
+        ],
+        image: 'https://images.pexels.com/photos/5778239/pexels-photo-5778239.jpeg',
+        metaDescription: 'Professional drainage and guttering solutions in Auckland. Prevent moisture problems and protect your home with PropertyCare NZ.',
+        metaKeywords: ['drainage solutions Auckland', 'guttering installation', 'downpipe installation', 'water management', 'Healthy Homes drainage']
+      },
+      {
+        id: 'mould-removal',
+        title: 'Mould Removal',
+        slug: 'mould-removal',
+        description: 'Professional mould removal and prevention services for Auckland homes, creating healthier living environments and addressing moisture issues.',
+        features: [
+          'Mould identification',
+          'Safe mould removal',
+          'Surface treatment',
+          'Moisture source identification',
+          'Prevention strategies'
+        ],
+        benefits: [
+          'Healthier living environment',
+          'Reduced allergies and respiratory issues',
+          'Comprehensive mould elimination',
+          'Long-term prevention'
+        ],
+        image: 'https://images.pexels.com/photos/6816354/pexels-photo-6816354.jpeg',
+        metaDescription: 'Professional mould removal services in Auckland. Create a healthier home with PropertyCare NZ\'s complete mould elimination and prevention solutions.',
+        metaKeywords: ['mould removal Auckland', 'mold remediation', 'black mold treatment', 'mould prevention', 'healthy home services']
+      },
+      {
+        id: 'healthy-homes-assessment',
+        title: 'Healthy Homes Assessment',
+        slug: 'healthy-homes-assessment',
+        description: 'Comprehensive Healthy Homes assessment services for Auckland properties, ensuring compliance with the Healthy Homes Standards and identifying improvement areas.',
+        features: [
+          'Full property inspection',
+          'Insulation assessment',
+          'Heating evaluation',
+          'Ventilation check',
+          'Moisture ingress identification'
+        ],
+        benefits: [
+          'Identify compliance gaps',
+          'Documentation for tenancy',
+          'Prioritized recommendations',
+          'Expert guidance'
+        ],
+        image: 'https://images.pexels.com/photos/4792489/pexels-photo-4792489.jpeg',
+        metaDescription: 'Professional Healthy Homes assessment services in Auckland. Ensure compliance with Healthy Homes Standards and identify improvement areas with PropertyCare NZ.',
+        metaKeywords: ['Healthy Homes assessment Auckland', 'compliance check', 'rental property assessment', 'Healthy Homes Standards', 'property inspection']
+      }
+    ],
+    faq: [
+      {
+        question: "What are the Healthy Homes Standards in Auckland?",
+        answer: "The Healthy Homes Standards are regulations that ensure rental properties in New Zealand provide tenants with warmer, drier homes. They include requirements for insulation, heating, ventilation, moisture ingress and drainage, and draft stopping."
+      },
+      {
+        question: "Do I need to comply with Healthy Homes Standards if I'm not a landlord?",
+        answer: "While the Healthy Homes Standards are legally required for rental properties, we recommend these improvements for all homes. They create healthier living environments, improve energy efficiency, and can increase your property\'s value."
+      },
+      {
+        question: "How long does a Healthy Homes assessment take?",
+        answer: "A typical Healthy Homes assessment takes 1-2 hours depending on the size and condition of the property. We thoroughly inspect all required areas and provide a detailed report with our findings and recommendations."
+      },
+      {
+        question: "Can you provide all the services needed to meet Healthy Homes compliance?",
+        answer: "Yes, we offer a complete end-to-end service for Healthy Homes compliance, from initial assessment through to installation of insulation, heating, ventilation, and moisture control solutions, as well as final compliance documentation."
+      }
+    ]
+  },
+  // Insurance Work
+  {
+    id: 'insurance-work',
+    title: 'Insurance Work',
+    slug: 'insurance-work',
+    description: 'Comprehensive insurance restoration and repair services for Auckland properties, specializing in damage assessment, claim assistance, and high-quality repairs.',
+    icon: 'Umbrella',
+    category: 'insurance-work',
+    features: [
+      'Insurance claim assessment',
+      'Detailed documentation',
+      'Direct insurer communication',
+      'Quality restoration work',
+      'Project management'
+    ],
+    benefits: [
+      'Streamlined claims process',
+      'Expert damage assessment',
+      'Quality guaranteed repairs',
+      'Stress-free restoration'
+    ],
+    includes: [
+      'Initial damage assessment',
+      'Detailed scope of works',
+      'Insurance claim assistance',
+      'Professional repairs',
+      'Final inspection and sign-off'
+    ],
+    image: 'https://images.pexels.com/photos/3856635/pexels-photo-3856635.jpeg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'fire-damage-restoration',
+        title: 'Fire Damage Restoration',
+        slug: 'fire-damage-restoration',
+        description: 'Specialized fire damage restoration services for Auckland properties, including smoke damage remediation, structural repairs, and complete rebuilds.',
+        features: [
+          'Emergency response',
+          'Smoke and soot removal',
+          'Structural assessment',
+          'Odor elimination',
+          'Complete reconstruction'
+        ],
+        benefits: [
+          'Comprehensive restoration',
+          'Insurance claim assistance',
+          'Health hazard elimination',
+          'Structural integrity restored'
+        ],
+        image: 'https://images.pexels.com/photos/6368656/pexels-photo-6368656.jpeg',
+        metaDescription: 'Professional fire damage restoration services in Auckland. From smoke damage cleanup to complete rebuilds, PropertyCare NZ provides comprehensive fire restoration solutions.',
+        metaKeywords: ['fire damage restoration Auckland', 'smoke damage cleanup', 'fire insurance claims', 'fire rebuild services', 'fire damage repair']
+      },
+      {
+        id: 'flood-damage-repairs',
+        title: 'Flood Damage Repairs',
+        slug: 'flood-damage-repairs',
+        description: 'Expert flood damage repair services for Auckland properties, including water extraction, drying, mold prevention, and structural restoration.',
+        features: [
+          'Water extraction',
+          'Structural drying',
+          'Mold prevention',
+          'Damage assessment',
+          'Complete restoration'
+        ],
+        benefits: [
+          'Rapid response',
+          'Prevent secondary damage',
+          'Insurance claim assistance',
+          'Complete restoration'
+        ],
+        image: 'https://images.pexels.com/photos/6508455/pexels-photo-6508455.jpeg',
+        metaDescription: 'Professional flood damage repair services in Auckland. From water extraction to complete restoration, PropertyCare NZ provides expert flood damage solutions.',
+        metaKeywords: ['flood damage repairs Auckland', 'water damage restoration', 'flood insurance claims', 'structural drying', 'water extraction services']
+      },
+      {
+        id: 'insurance-building-repairs',
+        title: 'Insurance Building Repairs',
+        slug: 'insurance-building-repairs',
+        description: 'Comprehensive insurance building repair services for Auckland properties, handling all aspects of structural and cosmetic restoration for insurance claims.',
+        features: [
+          'Detailed damage assessment',
+          'Scope of works preparation',
+          'Insurance claim navigation',
+          'Quality rebuilding',
+          'Final documentation'
+        ],
+        benefits: [
+          'Insurance company liaison',
+          'Detailed documentation',
+          'Quality workmanship',
+          'Project management'
+        ],
+        image: 'https://images.pexels.com/photos/5582599/pexels-photo-5582599.jpeg',
+        metaDescription: 'Professional insurance building repair services in Auckland. PropertyCare NZ handles all aspects of structural and cosmetic restoration for insurance claims.',
+        metaKeywords: ['insurance building repairs Auckland', 'insurance claim repairs', 'building restoration', 'property damage claims', 'insurance rebuilds']
+      }
+    ],
+    faq: [
+      {
+        question: "How do you work with insurance companies on claims?",
+        answer: "We work directly with your insurance company, providing detailed damage assessments, scope of works, and cost estimates. We can communicate with your insurer's assessors, attend joint inspections, and ensure all damage is properly documented for a fair claim settlement."
+      },
+      {
+        question: "Can you help if my insurance claim has been denied?",
+        answer: "Yes, we can provide independent assessments and documentation that may help with claim reconsideration. Our detailed reporting and expertise in insurance work can often identify covered damage that may have been overlooked in initial assessments."
+      },
+      {
+        question: "How quickly can you respond to emergency situations?",
+        answer: "We offer emergency response services for fire and flood damage, typically responding within 24 hours. For severe cases requiring immediate attention, we prioritize dispatch of our emergency team to prevent further damage to your property."
+      },
+      {
+        question: "Do you provide temporary repairs while waiting for insurance approval?",
+        answer: "Yes, we can perform temporary repairs to prevent further damage while waiting for claim approval. These might include water extraction, tarping damaged roofs, boarding up windows, or structural stabilization as needed."
+      }
+    ]
+  },
+  // Installations
+  {
+    id: 'installations',
+    title: 'Installations',
+    slug: 'installations',
+    description: 'Professional installation services for Auckland properties, encompassing everything from double glazing to home automation and security systems.',
+    icon: 'Cog',
+    category: 'installations',
+    features: [
+      'Professional installation',
+      'Quality products',
+      'Expert advice',
+      'Warranty coverage',
+      'After-installation support'
+    ],
+    benefits: [
+      'Professional workmanship',
+      'Properly functioning systems',
+      'Enhanced property value',
+      'Energy efficiency improvements'
+    ],
+    includes: [
+      'Initial consultation',
+      'Product selection assistance',
+      'Professional installation',
+      'Testing and commissioning',
+      'Cleanup and removal of packaging'
+    ],
+    image: 'https://images.pexels.com/photos/3637786/pexels-photo-3637786.jpeg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'double-glazing',
+        title: 'Double Glazing',
+        slug: 'double-glazing',
+        description: 'Expert double glazing installation services for Auckland homes, improving energy efficiency, reducing noise, and enhancing comfort.',
+        features: [
+          'Double glazed window installation',
+          'Retrofit double glazing',
+          'Thermal efficiency assessment',
+          'Sound insulation',
+          'Condensation reduction'
+        ],
+        benefits: [
+          'Improved energy efficiency',
+          'Reduced noise pollution',
+          'Enhanced home comfort',
+          'Decreased condensation'
+        ],
+        image: 'https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg',
+        metaDescription: 'Professional double glazing installation services in Auckland. Improve energy efficiency and reduce noise with PropertyCare NZ's quality window solutions.',
+        metaKeywords: ['double glazing Auckland', 'window installation', 'energy efficient windows', 'noise reduction windows', 'double glazed retrofit']
+      },
+      {
+        id: 'heat-pump-installation',
+        title: 'Heat Pump Installation',
+        slug: 'heat-pump-installation',
+        description: 'Professional heat pump installation services for Auckland properties, providing efficient heating and cooling solutions for year-round comfort.',
+        features: [
+          'Heat pump system design',
+          'Professional installation',
+          'System testing',
+          'User training',
+          'Warranty registration'
+        ],
+        benefits: [
+          'Energy efficient heating/cooling',
+          'Reduced power bills',
+          'Year-round comfort',
+          'Healthy Homes compliance'
+        ],
+        image: 'https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg',
+        metaDescription: 'Professional heat pump installation services in Auckland. Enjoy energy-efficient heating and cooling with PropertyCare NZ's expert installation.',
+        metaKeywords: ['heat pump installation Auckland', 'air conditioning installation', 'energy efficient heating', 'heat pump services', 'Healthy Homes heating']
+      },
+      {
+        id: 'air-conditioning',
+        title: 'Air Conditioning',
+        slug: 'air-conditioning',
+        description: 'Comprehensive air conditioning installation services for Auckland homes and businesses, providing cooling, heating, and air purification solutions.',
+        features: [
+          'System design and sizing',
+          'Professional installation',
+          'Ducted system installation',
+          'Multi-split systems',
+          'Smart controller setup'
+        ],
+        benefits: [
+          'Year-round temperature control',
+          'Improved air quality',
+          'Energy efficient operation',
+          'Quiet comfort'
+        ],
+        image: 'https://images.pexels.com/photos/4078188/pexels-photo-4078188.jpeg',
+        metaDescription: 'Professional air conditioning installation services in Auckland. Enjoy perfect indoor climate control with PropertyCare NZ's expert installation solutions.',
+        metaKeywords: ['air conditioning installation Auckland', 'ducted air conditioning', 'split system installation', 'commercial air conditioning', 'home cooling systems']
+      },
+      {
+        id: 'home-automation',
+        title: 'Home Automation',
+        slug: 'home-automation',
+        description: 'Expert home automation installation services for Auckland properties, integrating smart technology for security, comfort, and convenience.',
+        features: [
+          'Smart lighting installation',
+          'Security system integration',
+          'Home entertainment setup',
+          'Climate control automation',
+          'Voice control integration'
+        ],
+        benefits: [
+          'Enhanced convenience',
+          'Improved security',
+          'Energy management',
+          'Modern living experience'
+        ],
+        image: 'https://images.pexels.com/photos/3971985/pexels-photo-3971985.jpeg',
+        metaDescription: 'Professional home automation installation services in Auckland. Transform your home with PropertyCare NZ's smart technology integration.',
+        metaKeywords: ['home automation Auckland', 'smart home installation', 'home security systems', 'smart lighting installation', 'voice control systems']
+      },
+      {
+        id: 'locks-handles',
+        title: 'Locks & Handles',
+        slug: 'locks-handles',
+        description: 'Professional lock and handle installation services for Auckland properties, enhancing security, functionality, and aesthetics.',
+        features: [
+          'Door lock installation',
+          'Window lock fitting',
+          'Handle replacement',
+          'Security upgrade consultation',
+          'Master key systems'
+        ],
+        benefits: [
+          'Improved home security',
+          'Modern aesthetics',
+          'Smooth operation',
+          'Professional installation'
+        ],
+        image: 'https://images.pexels.com/photos/5614144/pexels-photo-5614144.jpeg',
+        metaDescription: 'Professional lock and handle installation services in Auckland. Enhance security and aesthetics with PropertyCare NZ's expert installation.',
+        metaKeywords: ['lock installation Auckland', 'door handle replacement', 'security locks', 'window lock installation', 'home security upgrades']
+      },
+      {
+        id: 'cupboards-shelves',
+        title: 'Cupboards & Shelves',
+        slug: 'cupboards-shelves',
+        description: 'Custom cupboard and shelving installation services for Auckland homes, maximizing storage and enhancing functionality in any space.',
+        features: [
+          'Custom shelving installation',
+          'Built-in cupboard fitting',
+          'Wardrobe organization systems',
+          'Pantry shelving',
+          'Garage storage solutions'
+        ],
+        benefits: [
+          'Maximized storage space',
+          'Custom solutions',
+          'Quality materials',
+          'Professional installation'
+        ],
+        image: 'https://images.pexels.com/photos/7319279/pexels-photo-7319279.jpeg',
+        metaDescription: 'Professional cupboard and shelving installation services in Auckland. Maximize storage and enhance functionality with PropertyCare NZ's custom solutions.',
+        metaKeywords: ['cupboard installation Auckland', 'custom shelving', 'wardrobe systems', 'storage solutions', 'built-in cabinets Auckland']
+      },
+      {
+        id: 'pergola-assembly',
+        title: 'Pergola Assembly',
+        slug: 'pergola-assembly',
+        description: 'Professional pergola assembly and installation services for Auckland properties, creating beautiful outdoor living spaces.',
+        features: [
+          'Pergola installation',
+          'Kit assembly',
+          'Custom pergola construction',
+          'Shade sail installation',
+          'Outdoor structure building'
+        ],
+        benefits: [
+          'Extended outdoor living',
+          'Increased property value',
+          'Professional construction',
+          'Customized solutions'
+        ],
+        image: 'https://images.pexels.com/photos/6969927/pexels-photo-6969927.jpeg',
+        metaDescription: 'Professional pergola assembly and installation services in Auckland. Create beautiful outdoor living spaces with PropertyCare NZ's expert construction.',
+        metaKeywords: ['pergola installation Auckland', 'outdoor structure building', 'shade structure installation', 'pergola assembly', 'custom pergola construction']
+      }
+    ],
+    faq: [
+      {
+        question: "Do you supply the products for installation or just provide installation services?",
+        answer: "We can work either way. We have partnerships with quality suppliers and can source products for you, ensuring you get the right products at competitive prices. Alternatively, if you've already purchased items, we can provide installation services only."
+      },
+      {
+        question: "Are your installers licensed and certified?",
+        answer: "Yes, all our installation specialists are fully licensed and certified for their respective trades. For specialized installations like heat pumps and electrical work, we use licensed electricians and certified installers who meet all regulatory requirements."
+      },
+      {
+        question: "How long does a typical installation take?",
+        answer: "Installation timeframes vary depending on the project. Simple installations like locks or shelving may take just a few hours, while more complex projects like double glazing or home automation systems might take several days. We'll provide a clear timeframe before starting work."
+      },
+      {
+        question: "Do you provide warranties on installations?",
+        answer: "Yes, all our installation work comes with a workmanship warranty. Additionally, products installed typically come with manufacturer warranties, which we'll register on your behalf and provide all necessary documentation."
+      }
+    ]
+  },
+  // Outdoor Maintenance
+  {
+    id: 'outdoor-maintenance',
+    title: 'Outdoor Maintenance',
+    slug: 'outdoor-maintenance',
+    description: 'Comprehensive outdoor maintenance services for Auckland properties, keeping your exterior spaces functional, beautiful, and well-maintained year-round.',
+    icon: 'TreePine',
+    category: 'outdoor-maintenance',
+    features: [
+      'Exterior cleaning',
+      'Surface maintenance',
+      'Structural repairs',
+      'Preventative maintenance',
+      'Property upkeep'
+    ],
+    benefits: [
+      'Enhanced curb appeal',
+      'Prevent costly damage',
+      'Extend property lifespan',
+      'Maintain property value'
+    ],
+    includes: [
+      'Property assessment',
+      'Customized maintenance plan',
+      'Professional services',
+      'Quality materials',
+      'Regular maintenance options'
+    ],
+    image: 'https://images.pexels.com/photos/589/garden-green-trees-back-garden.jpg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'paving-bricklaying',
+        title: 'Paving & Bricklaying',
+        slug: 'paving-bricklaying',
+        description: 'Expert paving and bricklaying services for Auckland properties, creating beautiful and durable outdoor surfaces and structures.',
+        features: [
+          'Patio installation',
+          'Pathway construction',
+          'Brick wall construction',
+          'Paving repairs',
+          'Decorative brickwork'
+        ],
+        benefits: [
+          'Durable outdoor surfaces',
+          'Enhanced property aesthetics',
+          'Professional craftsmanship',
+          'Quality materials'
+        ],
+        image: 'https://images.pexels.com/photos/258804/pexels-photo-258804.jpeg',
+        metaDescription: 'Professional paving and bricklaying services in Auckland. Create beautiful, durable outdoor spaces with PropertyCare NZ's expert craftsmanship.',
+        metaKeywords: ['paving services Auckland', 'bricklaying contractors', 'patio installation', 'pathway construction', 'brick repair Auckland']
+      },
+      {
+        id: 'concreting',
+        title: 'Concreting',
+        slug: 'concreting',
+        description: 'Professional concreting services for Auckland properties, providing durable solutions for driveways, paths, and outdoor areas.',
+        features: [
+          'Concrete driveway installation',
+          'Path and walkway construction',
+          'Concrete slab pouring',
+          'Exposed aggregate finishing',
+          'Concrete repair'
+        ],
+        benefits: [
+          'Long-lasting durability',
+          'Low maintenance',
+          'Custom finish options',
+          'Professional installation'
+        ],
+        image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg',
+        metaDescription: 'Professional concreting services in Auckland. From driveways to paths, PropertyCare NZ provides expert concrete solutions for your property.',
+        metaKeywords: ['concreting services Auckland', 'concrete driveway installation', 'concrete paths', 'exposed aggregate', 'concrete repairs Auckland']
+      },
+      {
+        id: 'fence-gate-repairs',
+        title: 'Fence & Gate Repairs',
+        slug: 'fence-gate-repairs',
+        description: 'Expert fence and gate repair services for Auckland properties, maintaining security, privacy, and aesthetic appeal.',
+        features: [
+          'Fence repairs and maintenance',
+          'Gate repairs and adjustments',
+          'Post replacement',
+          'Panel replacement',
+          'Hardware upgrades'
+        ],
+        benefits: [
+          'Restore property security',
+          'Improve curb appeal',
+          'Extend fence lifespan',
+          'Reliable operation'
+        ],
+        image: 'https://images.pexels.com/photos/533157/pexels-photo-533157.jpeg',
+        metaDescription: 'Professional fence and gate repair services in Auckland. Maintain security and aesthetics with PropertyCare NZ's expert repair solutions.',
+        metaKeywords: ['fence repairs Auckland', 'gate repair services', 'fence maintenance', 'gate adjustment', 'fence post replacement']
+      },
+      {
+        id: 'roof-cleaning',
+        title: 'Roof Cleaning',
+        slug: 'roof-cleaning',
+        description: 'Professional roof cleaning services for Auckland properties, removing moss, lichen, and debris to extend roof life and improve appearance.',
+        features: [
+          'Moss and lichen removal',
+          'Debris clearing',
+          'Gutter cleaning',
+          'Roof treatment application',
+          'Preventative maintenance'
+        ],
+        benefits: [
+          'Extended roof lifespan',
+          'Improved appearance',
+          'Prevent water damage',
+          'Maintain warranty validity'
+        ],
+        image: 'https://images.pexels.com/photos/5816713/pexels-photo-5816713.jpeg',
+        metaDescription: 'Professional roof cleaning services in Auckland. Extend your roof's lifespan and improve appearance with PropertyCare NZ's expert cleaning.',
+        metaKeywords: ['roof cleaning Auckland', 'moss removal roof', 'roof maintenance', 'gutter cleaning', 'roof treatment services']
+      },
+      {
+        id: 'water-blasting',
+        title: 'Water Blasting',
+        slug: 'water-blasting',
+        description: 'Comprehensive water blasting services for Auckland properties, effectively cleaning outdoor surfaces and removing dirt, mould, and stains.',
+        features: [
+          'Driveway cleaning',
+          'Path and patio cleaning',
+          'Deck and fence cleaning',
+          'House exterior washing',
+          'Surface preparation'
+        ],
+        benefits: [
+          'Restore surface appearance',
+          'Remove stubborn stains',
+          'Prevent slip hazards',
+          'Prepare for treatments'
+        ],
+        image: 'https://images.pexels.com/photos/4239091/pexels-photo-4239091.jpeg',
+        metaDescription: 'Professional water blasting services in Auckland. Effectively clean exterior surfaces with PropertyCare NZ's expert pressure washing solutions.',
+        metaKeywords: ['water blasting Auckland', 'pressure washing', 'driveway cleaning', 'exterior house washing', 'patio cleaning services']
+      },
+      {
+        id: 'driveway-cleaning',
+        title: 'Driveway Cleaning',
+        slug: 'driveway-cleaning',
+        description: 'Specialized driveway cleaning services for Auckland properties, removing oil stains, moss, and dirt to restore appearance and safety.',
+        features: [
+          'Concrete driveway cleaning',
+          'Paved driveway restoration',
+          'Oil stain removal',
+          'Moss and weed treatment',
+          'Protective sealing'
+        ],
+        benefits: [
+          'Restore driveway appearance',
+          'Remove dangerous slip hazards',
+          'Prevent deterioration',
+          'Extend driveway life'
+        ],
+        image: 'https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg',
+        metaDescription: 'Professional driveway cleaning services in Auckland. Restore appearance and safety with PropertyCare NZ's expert cleaning solutions.',
+        metaKeywords: ['driveway cleaning Auckland', 'concrete driveway cleaning', 'oil stain removal', 'paved driveway restoration', 'driveway sealing']
+      },
+      {
+        id: 'building-cleaning',
+        title: 'Building Cleaning',
+        slug: 'building-cleaning',
+        description: 'Professional building exterior cleaning services for Auckland properties, safely removing dirt, mold, and stains from all exterior surfaces.',
+        features: [
+          'House washing',
+          'Commercial building cleaning',
+          'Soft wash techniques',
+          'Mold and mildew removal',
+          'Pre-paint cleaning'
+        ],
+        benefits: [
+          'Restore building appearance',
+          'Prevent surface deterioration',
+          'Identify maintenance issues',
+          'Preparation for painting'
+        ],
+        image: 'https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg',
+        metaDescription: 'Professional building exterior cleaning services in Auckland. Safely restore your building's appearance with PropertyCare NZ's expert cleaning.',
+        metaKeywords: ['building cleaning Auckland', 'house washing services', 'exterior cleaning', 'commercial building washing', 'soft wash cleaning']
+      },
+      {
+        id: 'cladding-repairs',
+        title: 'Cladding Repairs',
+        slug: 'cladding-repairs',
+        description: 'Expert cladding repair services for Auckland properties, fixing damaged exterior cladding and ensuring proper weather protection.',
+        features: [
+          'Weatherboard repairs',
+          'Brick cladding maintenance',
+          'Plaster cladding repairs',
+          'Metal cladding fixes',
+          'Cladding replacement'
+        ],
+        benefits: [
+          'Weather protection',
+          'Prevent water damage',
+          'Restore building appearance',
+          'Address weathertightness issues'
+        ],
+        image: 'https://images.pexels.com/photos/1029611/pexels-photo-1029611.jpeg',
+        metaDescription: 'Professional cladding repair services in Auckland. Ensure proper weather protection with PropertyCare NZ's expert repair solutions.',
+        metaKeywords: ['cladding repairs Auckland', 'weatherboard repairs', 'exterior cladding maintenance', 'weathertightness repairs', 'plaster cladding repair']
+      }
+    ],
+    faq: [
+      {
+        question: "How often should I have my roof cleaned?",
+        answer: "We recommend roof cleaning every 2-3 years for most Auckland properties. However, homes in areas with overhanging trees or high moisture may require more frequent cleaning. Regular cleaning prevents moss and lichen buildup that can damage roofing materials and cause leaks."
+      },
+      {
+        question: "Are your water blasting techniques safe for all surfaces?",
+        answer: "We adjust our water blasting pressure and techniques based on the specific surface being cleaned. For delicate surfaces like some claddings or older brickwork, we use soft wash techniques with appropriate cleaning agents rather than high pressure that could cause damage."
+      },
+      {
+        question: "Do you provide regular maintenance packages for outdoor areas?",
+        answer: "Yes, we offer customized maintenance plans that can include seasonal cleaning, inspections, and preventative treatments. These plans can be tailored to your property's specific needs and budget, with options for quarterly, bi-annual, or annual services."
+      },
+      {
+        question: "Can you fix leaking or damaged gutters as part of outdoor maintenance?",
+        answer: "Absolutely. Gutter repair and maintenance is a key part of our outdoor maintenance services. We can repair leaking joints, replace damaged sections, adjust slopes for proper drainage, and ensure downpipes are functioning correctly."
+      }
+    ]
+  },
+  // Handyman Services
+  {
+    id: 'handyman',
+    title: 'Handyman Services',
+    slug: 'handyman',
+    description: 'Reliable and professional handyman services for Auckland properties, taking care of all those small repairs, installations, and maintenance tasks.',
+    icon: 'Hammer',
+    category: 'handyman',
+    features: [
+      'General repairs',
+      'Small installations',
+      'Maintenance tasks',
+      'Assembly services',
+      'Property upkeep'
+    ],
+    benefits: [
+      'One call for multiple tasks',
+      'Professional workmanship',
+      'Time-saving solutions',
+      'Skilled technicians'
+    ],
+    includes: [
+      'Free quote',
+      'Experienced handyman',
+      'Quality materials',
+      'Clean workspace',
+      'Follow-up service'
+    ],
+    image: 'https://images.pexels.com/photos/4246119/pexels-photo-4246119.jpeg',
+    location: 'Auckland',
+    childServices: [
+      {
+        id: 'general-repairs',
+        title: 'General Repairs',
+        slug: 'general-repairs',
+        description: 'Professional general repair services for Auckland homes, addressing all those small but important fixes around your property.',
+        features: [
+          'Door and window repairs',
+          'Furniture repairs',
+          'Trim and molding fixes',
+          'Hinges and handles',
+          'Patching and filling'
+        ],
+        benefits: [
+          'Address multiple issues in one visit',
+          'Professional results',
+          'Prevent larger problems',
+          'Maintain property condition'
+        ],
+        image: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg',
+        metaDescription: 'Professional general repair services in Auckland. Address all those small but important fixes with PropertyCare NZ's skilled handyman services.',
+        metaKeywords: ['general repairs Auckland', 'handyman repairs', 'door and window repairs', 'furniture repair services', 'home maintenance Auckland']
+      },
+      {
+        id: 'gutter-cleaning',
+        title: 'Gutter Cleaning',
+        slug: 'gutter-cleaning',
+        description: 'Professional gutter cleaning services for Auckland homes, preventing water damage and maintaining proper drainage systems.',
+        features: [
+          'Gutter debris removal',
+          'Downpipe clearing',
+          'Gutter flushing',
+          'Minor repairs',
+          'Gutter guard installation'
+        ],
+        benefits: [
+          'Prevent water damage',
+          'Avoid overflow issues',
+          'Extend gutter lifespan',
+          'Maintain proper drainage'
+        ],
+        image: 'https://images.pexels.com/photos/5778239/pexels-photo-5778239.jpeg',
+        metaDescription: 'Professional gutter cleaning services in Auckland. Prevent water damage and maintain proper drainage with PropertyCare NZ's thorough cleaning.',
+        metaKeywords: ['gutter cleaning Auckland', 'downpipe clearing', 'gutter maintenance', 'gutter guard installation', 'gutter debris removal']
+      },
+      {
+        id: 'windows-doors',
+        title: 'Windows & Doors',
+        slug: 'windows-doors',
+        description: 'Expert window and door repair and maintenance services for Auckland homes, improving functionality, security, and energy efficiency.',
+        features: [
+          'Window repairs',
+          'Door adjustments',
+          'Lock and handle replacement',
+          'Weatherstripping',
+          'Sliding door maintenance'
+        ],
+        benefits: [
+          'Improve security',
+          'Enhance energy efficiency',
+          'Restore smooth operation',
+          'Extend component lifespan'
+        ],
+        image: 'https://images.pexels.com/photos/276659/pexels-photo-276659.jpeg',
+        metaDescription: 'Professional window and door repair services in Auckland. Improve functionality, security, and energy efficiency with PropertyCare NZ's expert services.',
+        metaKeywords: ['window repairs Auckland', 'door maintenance', 'sliding door repairs', 'window lock replacement', 'door adjustments Auckland']
+      },
+      {
+        id: 'shelving-installation',
+        title: 'Shelving Installation',
+        slug: 'shelving-installation',
+        description: 'Professional shelving installation services for Auckland homes, creating organized storage solutions throughout your property.',
+        features: [
+          'Shelf mounting',
+          'Bookcase assembly',
+          'Wall unit installation',
+          'Custom shelving',
+          'Storage organization'
+        ],
+        benefits: [
+          'Maximize storage space',
+          'Professional installation',
+          'Secure mounting',
+          'Customized solutions'
+        ],
+        image: 'https://images.pexels.com/photos/7319325/pexels-photo-7319325.jpeg',
+        metaDescription: 'Professional shelving installation services in Auckland. Create organized storage solutions with PropertyCare NZ's expert installation.',
+        metaKeywords: ['shelving installation Auckland', 'bookcase assembly', 'wall shelf mounting', 'custom shelving installation', 'storage solutions Auckland']
+      },
+      {
+        id: 'tiling-repairs',
+        title: 'Tiling Repairs',
+        slug: 'tiling-repairs',
+        description: 'Expert tiling repair services for Auckland homes, fixing cracked, loose, or damaged tiles in kitchens, bathrooms, and other areas.',
+        features: [
+          'Loose tile repairs',
+          'Cracked tile replacement',
+          'Grout repair and renewal',
+          'Sealing services',
+          'Small area retiling'
+        ],
+        benefits: [
+          'Extend tile lifespan',
+          'Prevent water damage',
+          'Restore appearance',
+          'Fix safety hazards'
+        ],
+        image: 'https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg',
+        metaDescription: 'Professional tiling repair services in Auckland. Fix cracked, loose, or damaged tiles with PropertyCare NZ's expert repair solutions.',
+        metaKeywords: ['tiling repairs Auckland', 'cracked tile replacement', 'grout repair', 'loose tile fixing', 'bathroom tile repairs']
+      }
+    ],
+    faq: [
+      {
+        question: "What kinds of tasks can your handyman service handle?",
+        answer: "Our handyman service can handle a wide range of small to medium repairs and installations including furniture assembly, picture and TV mounting, door and window repairs, gutter cleaning, small painting jobs, tiling repairs, shelf installation, and much more."
+      },
+      {
+        question: "Can you handle multiple small jobs in one visit?",
+        answer: "Absolutely! One of the main advantages of our handyman service is the ability to take care of multiple small tasks in a single visit. This saves you time and money compared to hiring different specialists for each job."
+      },
+      {
+        question: "Do you bring your own tools and supplies?",
+        answer: "Yes, our handymen arrive with a comprehensive set of professional tools for most common repairs and installations. For materials and specific parts, we can either use what you provide or source the necessary supplies for you at competitive prices."
+      },
+      {
+        question: "What is your minimum callout fee?",
+        answer: "Our handyman services have a one-hour minimum callout fee, but we aim to maximize value during that time. For small jobs, we'll try to handle multiple tasks within the callout period to ensure you get the most from our service."
+      }
+    ]
+  }
+];
+
+export const getServiceIcon = (iconName: string) => {
+  const icons = {
+    'Building': Building,
+    'Kitchen': Kitchen,
+    'Paintbrush': Paintbrush,
+    'Thermometer': Thermometer,
+    'Home': Home,
+    'Umbrella': Umbrella,
+    'Cog': Cog,
+    'Lock': Lock,
+    'TreePine': TreePine,
+    'Droplets': Droplets,
+    'Hammer': Hammer,
+    'Grid3X3': Grid3X3,
+    'Warehouse': Warehouse,
+    'Palette': Palette,
+    'Cloud': Cloud,
+    'Tools': Tools,
+    'Bath': Bath,
+    'Fan': Fan,
+    'Gauge': Gauge,
+    'Trash2': Trash2,
+    'Window': Window,
+    'Key': Key,
+    'Fence': Fence,
+    'Ruler': Ruler,
+    'Brush': Brush,
+    'Folder': Folder,
+    'Flame': Flame,
+    'Shower': Shower,
+    'ScanLine': ScanLine,
+    'Scaling': Scaling,
+    'FileQuestion': FileQuestion
+  };
+  
+  return icons[iconName as keyof typeof icons] || Wrench;
+};
+
+export const getServicesByCategory = (category: string) => {
+  return services.filter(service => service.category === category);
+};
+
+export const getServiceBySlug = (slug: string) => {
+  // First check if it's a parent service
+  const parentService = services.find(service => service.slug === slug);
+  if (parentService) {
+    return parentService;
+  }
+  
+  // If not found, could be a child service
+  const childService = getAllChildServices().find(item => item.service.slug === slug);
+  return childService ? childService.service : null;
+};
+
+export const getAllChildServices = () => {
+  const allChildServices: { parentSlug: string; service: any }[] = [];
+  
+  services.forEach(service => {
+    if (service.childServices && service.childServices.length > 0) {
+      service.childServices.forEach(childService => {
+        allChildServices.push({
+          parentSlug: service.slug,
+          service: childService
+        });
+      });
+    }
+  });
+  
+  return allChildServices;
+};
+
+export const getParentServiceByChildSlug = (childSlug: string) => {
+  const childServiceInfo = getAllChildServices().find(item => item.service.slug === childSlug);
+  return childServiceInfo ? services.find(service => service.slug === childServiceInfo.parentSlug) : null;
+};
