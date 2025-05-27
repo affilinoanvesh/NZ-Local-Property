@@ -69,3 +69,85 @@ export const handymanImages = {
   'shelving-installation': 'https://images.pexels.com/photos/7319279/pexels-photo-7319279.jpeg', // Shelving
   'tiling-repairs': 'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg' // Tiling repair
 } as const;
+
+// Service Categories
+export const serviceCategories = [
+  { id: 'general-repairs', title: 'General Repairs' },
+  { id: 'healthy-home', title: 'Healthy Homes' },
+  { id: 'insurance', title: 'Insurance Work' },
+  { id: 'installations', title: 'Installations' },
+  { id: 'outdoor', title: 'Outdoor Maintenance' },
+  { id: 'handyman', title: 'Handyman Services' }
+] as const;
+
+// Define the service type
+interface Service {
+  id: string;
+  title: string;
+  slug: string;
+  category: string;
+  description: string;
+  childServices?: ChildService[];
+}
+
+interface ChildService {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+}
+
+// Export services array
+export const services: Service[] = [
+  {
+    id: 'general-repairs',
+    title: 'General Repairs',
+    slug: 'general-repairs',
+    category: 'general-repairs',
+    description: 'Comprehensive repair services for your property',
+    childServices: [
+      {
+        id: 'building-repairs',
+        title: 'Building Repairs',
+        slug: 'building-repairs',
+        description: 'General building repair and maintenance'
+      },
+      {
+        id: 'kitchen-maintenance',
+        title: 'Kitchen Maintenance',
+        slug: 'kitchen-maintenance',
+        description: 'Kitchen repairs and maintenance services'
+      }
+      // Add other child services as needed
+    ]
+  },
+  {
+    id: 'healthy-home',
+    title: 'Healthy Homes',
+    slug: 'healthy-home',
+    category: 'healthy-home',
+    description: 'Services to ensure a healthy living environment',
+    childServices: [
+      {
+        id: 'insulation',
+        title: 'Insulation Installation',
+        slug: 'insulation-installation',
+        description: 'Home insulation services'
+      }
+      // Add other child services as needed
+    ]
+  }
+  // Add other main services as needed
+];
+
+// Add the missing getAllChildServices function
+export const getAllChildServices = () => {
+  return services.flatMap(parent => 
+    parent.childServices 
+      ? parent.childServices.map(child => ({ 
+          service: child, 
+          parentSlug: parent.slug 
+        })) 
+      : []
+  );
+};
