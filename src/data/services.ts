@@ -1,12 +1,5 @@
 // Service category icons and images
-import {
-  Wrench, // General Repairs
-  Home, // Healthy Homes
-  Shield, // Insurance Work
-  Settings, // Installations
-  Sun, // Outdoor Maintenance
-  Tool, // Handyman Services
-} from 'lucide-react';
+import { Wrench, Home, Shield, Settings, Sun, PenTool as Tool } from 'lucide-react';
 
 // Map service icons to Lucide components
 const serviceIcons: { [key: string]: any } = {
