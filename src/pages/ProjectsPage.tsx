@@ -15,11 +15,11 @@ const ProjectsPage: React.FC = () => {
     <>
       <Helmet>
         <title>Our Projects | PropertyCare NZ - Property Maintenance Auckland</title>
-        <meta name="description" content="Browse our portfolio of successful property maintenance and transformation projects in Auckland. See before and after results of our work." />
+        <meta name="description" content="Browse our portfolio of successful property maintenance and transformation projects in Auckland. See the quality results of our work." />
         <meta name="keywords" content="property maintenance projects, Auckland renovations, home improvement portfolio, property transformations" />
         <link rel="canonical" href="https://propertycarenz.co.nz/projects" />
         <meta property="og:title" content="Our Projects | PropertyCare NZ - Property Maintenance Auckland" />
-        <meta property="og:description" content="Browse our portfolio of successful property maintenance and transformation projects in Auckland. See before and after results of our work." />
+        <meta property="og:description" content="Browse our portfolio of successful property maintenance and transformation projects in Auckland. See the quality results of our work." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://propertycarenz.co.nz/projects" />
       </Helmet>
@@ -28,7 +28,7 @@ const ProjectsPage: React.FC = () => {
       <section className="relative bg-gradient-to-r from-primary-900 to-primary-800 text-white py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0 mix-blend-overlay opacity-20">
           <img 
-            src="https://images.pexels.com/photos/8961001/pexels-photo-8961001.jpeg" 
+            src="https://images.pexels.com/photos/6473978/pexels-photo-6473978.jpeg" 
             alt="Property maintenance projects" 
             className="w-full h-full object-cover"
           />
@@ -174,7 +174,7 @@ const ProjectsPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 to-primary-800 opacity-[0.97]"></div>
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7937307/pexels-photo-7937307.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/8134820/pexels-photo-8134820.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">

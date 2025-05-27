@@ -28,14 +28,14 @@ const ServicesPage: React.FC = () => {
         <meta property="og:description" content="Discover our comprehensive range of professional property maintenance services in Auckland. From repairs and renovations to specialized installations, PropertyCare NZ delivers exceptional quality for residential and commercial properties." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://propertycarenz.co.nz/services" />
-        <meta property="og:image" content="https://images.pexels.com/photos/8961084/pexels-photo-8961084.jpeg" />
+        <meta property="og:image" content="https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg" />
       </Helmet>
       
       {/* Hero Section - Full width, immersive design */}
       <section className="relative bg-gradient-to-r from-primary-900 to-primary-800 text-white py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0 mix-blend-overlay opacity-30">
           <img 
-            src="https://images.pexels.com/photos/8961084/pexels-photo-8961084.jpeg" 
+            src="https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg" 
             alt="Professional property maintenance services in Auckland" 
             className="w-full h-full object-cover"
           />
@@ -404,7 +404,7 @@ const ServicesPage: React.FC = () => {
       {/* Request Quote Section */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 to-primary-800 opacity-95"></div>
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7937307/pexels-photo-7937307.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/8134820/pexels-photo-8134820.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">

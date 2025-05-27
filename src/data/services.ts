@@ -72,7 +72,7 @@ export const services: Service[] = [
       'Clean-up and final inspection',
       'Warranty on workmanship'
     ],
-    image: 'https://images.pexels.com/photos/8961084/pexels-photo-8961084.jpeg',
+    image: 'https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg',
     location: 'Auckland',
     childServices: [
       {
@@ -93,7 +93,7 @@ export const services: Service[] = [
           'Licensed builders',
           'Comprehensive repair services'
         ],
-        image: 'https://images.pexels.com/photos/8961001/pexels-photo-8961001.jpeg',
+        image: 'https://images.pexels.com/photos/6473978/pexels-photo-6473978.jpeg',
         metaDescription: 'Expert building repair services in Auckland. PropertyCare NZ provides professional solutions for all structural and building repair needs.',
         metaKeywords: ['building repairs Auckland', 'structural repairs', 'property maintenance', 'building restoration Auckland'],
         faq: [
@@ -129,7 +129,7 @@ export const services: Service[] = [
           'Prevent costly replacements',
           'Maintain property value'
         ],
-        image: 'https://images.pexels.com/photos/1358900/pexels-photo-1358900.jpeg',
+        image: 'https://images.pexels.com/photos/10628460/pexels-photo-10628460.jpeg',
         metaDescription: 'Professional kitchen maintenance and repair services in Auckland. Keep your kitchen functional and looking great with PropertyCare NZ.',
         metaKeywords: ['kitchen maintenance Auckland', 'kitchen repairs', 'cabinet repairs', 'countertop repairs Auckland', 'kitchen plumbing services'],
         faq: [
@@ -165,7 +165,7 @@ export const services: Service[] = [
           'Address moisture problems',
           'Expert plumbing solutions'
         ],
-        image: 'https://images.pexels.com/photos/6585758/pexels-photo-6585758.jpeg',
+        image: 'https://images.pexels.com/photos/7546320/pexels-photo-7546320.jpeg',
         metaDescription: 'Expert bathroom repair services in Auckland. From leaking showers to tile restoration, PropertyCare NZ provides complete bathroom maintenance solutions.',
         metaKeywords: ['bathroom repairs Auckland', 'leaking shower repair', 'tile restoration', 'bathroom maintenance', 'bathroom plumbing Auckland'],
         faq: [
@@ -237,7 +237,7 @@ export const services: Service[] = [
           'Improve appearance',
           'Fix safety hazards'
         ],
-        image: 'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg',
+        image: 'https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg',
         metaDescription: 'Professional carpet and flooring repair services in Auckland. Restore damaged flooring and extend the life of your floors with PropertyCare NZ.',
         metaKeywords: ['carpet repairs Auckland', 'flooring repairs', 'hardwood floor restoration', 'carpet stretching Auckland', 'vinyl floor repair'],
         faq: [
@@ -309,7 +309,7 @@ export const services: Service[] = [
           'Long-lasting results',
           'Wide range of tile options'
         ],
-        image: 'https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg',
+        image: 'https://images.pexels.com/photos/6474305/pexels-photo-6474305.jpeg',
         metaDescription: 'Professional tiling services in Auckland. From installation to repairs, PropertyCare NZ provides expert tiling solutions for bathrooms, kitchens, and more.',
         metaKeywords: ['tiling services Auckland', 'bathroom tiling', 'kitchen tiling', 'tile repairs Auckland', 'tile installation'],
         faq: [
@@ -541,7 +541,7 @@ export const services: Service[] = [
           'Reduce dampness',
           'Meet Healthy Homes requirements'
         ],
-        image: 'https://images.pexels.com/photos/5778239/pexels-photo-5778239.jpeg',
+        image: 'https://images.pexels.com/photos/7019071/pexels-photo-7019071.jpeg',
         metaDescription: 'Professional drainage and guttering solutions in Auckland. Prevent moisture problems and protect your home with PropertyCare NZ.',
         metaKeywords: ['drainage solutions Auckland', 'guttering installation', 'downpipe installation', 'water management', 'Healthy Homes drainage'],
         faq: [
@@ -895,7 +895,7 @@ export const services: Service[] = [
           'Year-round comfort',
           'Healthy Homes compliance'
         ],
-        image: 'https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg',
+        image: 'https://images.pexels.com/photos/5835242/pexels-photo-5835242.jpeg',
         metaDescription: 'Professional heat pump installation services in Auckland. Enjoy energy-efficient heating and cooling with PropertyCare NZ\'s expert installation.',
         metaKeywords: ['heat pump installation Auckland', 'air conditioning installation', 'energy efficient heating', 'heat pump services', 'Healthy Homes heating'],
         faq: [
@@ -1141,7 +1141,7 @@ export const services: Service[] = [
       'Quality materials',
       'Regular maintenance options'
     ],
-    image: 'https://images.pexels.com/photos/589/garden-green-trees-back-garden.jpg',
+    image: 'https://images.pexels.com/photos/8293679/pexels-photo-8293679.jpeg',
     location: 'Auckland',
     childServices: [
       {
@@ -1537,7 +1537,7 @@ export const services: Service[] = [
           'Extend gutter lifespan',
           'Maintain proper drainage'
         ],
-        image: 'https://images.pexels.com/photos/5778239/pexels-photo-5778239.jpeg',
+        image: 'https://images.pexels.com/photos/6069112/pexels-photo-6069112.jpeg',
         metaDescription: 'Professional gutter cleaning services in Auckland. Prevent water damage and maintain proper drainage with PropertyCare NZ\'s thorough cleaning.',
         metaKeywords: ['gutter cleaning Auckland', 'downpipe clearing', 'gutter maintenance', 'gutter guard installation', 'gutter debris removal'],
         faq: [
@@ -1645,7 +1645,7 @@ export const services: Service[] = [
           'Restore appearance',
           'Fix safety hazards'
         ],
-        image: 'https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg',
+        image: 'https://images.pexels.com/photos/2297961/pexels-photo-2297961.jpeg',
         metaDescription: 'Professional tiling repair services in Auckland. Fix cracked, loose, or damaged tiles with PropertyCare NZ\'s expert repair solutions.',
         metaKeywords: ['tiling repairs Auckland', 'cracked tile replacement', 'grout repair', 'loose tile fixing', 'bathroom tile repairs'],
         faq: [

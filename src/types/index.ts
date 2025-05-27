@@ -54,8 +54,7 @@ export interface Project {
   description: string;
   category: ServiceCategory;
   location: string;
-  beforeImage: string;
-  afterImage: string;
+  image: string;
   challenge: string;
   solution: string;
 }

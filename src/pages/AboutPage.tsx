@@ -16,15 +16,15 @@ const AboutPage: React.FC = () => {
         <meta property="og:description" content="Learn about PropertyCare NZ, your trusted partner for comprehensive property maintenance and repair services throughout Auckland." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://propertycarenz.co.nz/about" />
-        <meta property="og:image" content="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg" />
+        <meta property="og:image" content="https://images.pexels.com/photos/8293673/pexels-photo-8293673.jpeg" />
       </Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-primary-900 to-primary-800 text-white py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0 mix-blend-overlay opacity-20">
           <img 
-            src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg" 
-            alt="Property maintenance team" 
+            src="https://images.pexels.com/photos/8293673/pexels-photo-8293673.jpeg" 
+            alt="Professional property maintenance team" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -63,8 +63,8 @@ const AboutPage: React.FC = () => {
             </div>
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img 
-                src="https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg" 
-                alt="Team working on a project" 
+                src="https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg" 
+                alt="Professional team working on property maintenance project" 
                 className="w-full h-auto"
               />
             </div>

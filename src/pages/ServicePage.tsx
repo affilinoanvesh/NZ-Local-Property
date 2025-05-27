@@ -478,7 +478,7 @@ const ServicePage: React.FC = () => {
       {/* CTA Section - More prominent and engaging */}
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 to-primary-800 opacity-95"></div>
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7937307/pexels-photo-7937307.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/8134820/pexels-photo-8134820.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">

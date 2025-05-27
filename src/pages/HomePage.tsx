@@ -27,18 +27,18 @@ const HomePage: React.FC = () => {
         <meta property="og:description" content="Professional property maintenance and repair services across Auckland. From general repairs to specialized installations, we've got you covered." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://propertycarenz.co.nz/" />
-        <meta property="og:image" content="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" />
+        <meta property="og:image" content="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="PropertyCare NZ | Professional Property Services Auckland" />
         <meta name="twitter:description" content="Professional property maintenance and repair services across Auckland. From general repairs to specialized installations, we've got you covered." />
-        <meta name="twitter:image" content="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" />
+        <meta name="twitter:image" content="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg" />
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "PropertyCare NZ",
-              "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+              "image": "https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg",
               "description": "Professional property maintenance and repair services across Auckland.",
               "address": {
                 "@type": "PostalAddress",
@@ -78,8 +78,8 @@ const HomePage: React.FC = () => {
       <section className="relative bg-gradient-to-r from-primary-900 to-primary-800 overflow-hidden">
         <div className="absolute inset-0 z-0 mix-blend-overlay opacity-20">
           <img 
-            src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" 
-            alt="Property exterior" 
+            src="https://images.pexels.com/photos/164558/pexels-photo-164558.jpeg" 
+            alt="Modern Auckland property exterior" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -115,8 +115,8 @@ const HomePage: React.FC = () => {
             
             <div className="hidden md:block rounded-lg overflow-hidden shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/3990364/pexels-photo-3990364.jpeg" 
-                alt="Professional maintenance service" 
+                src="https://images.pexels.com/photos/8293667/pexels-photo-8293667.jpeg" 
+                alt="Professional property inspector conducting maintenance assessment" 
                 className="w-full h-full object-cover" 
               />
             </div>
@@ -194,8 +194,8 @@ const HomePage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <img 
-                src="https://images.pexels.com/photos/5691586/pexels-photo-5691586.jpeg" 
-                alt="Property renovation project" 
+                src="https://images.pexels.com/photos/8292797/pexels-photo-8292797.jpeg" 
+                alt="Professional tradesman inspecting property renovation work" 
                 className="rounded-lg shadow-lg w-full"
               />
             </div>

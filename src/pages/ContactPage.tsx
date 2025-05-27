@@ -22,7 +22,7 @@ const ContactPage: React.FC = () => {
       <section className="relative bg-gradient-to-r from-primary-900 to-primary-800 text-white py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0 z-0 mix-blend-overlay opacity-20">
           <img 
-            src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg" 
+            src="https://images.pexels.com/photos/8293673/pexels-photo-8293673.jpeg" 
             alt="Contact PropertyCare NZ" 
             className="w-full h-full object-cover"
           />
@@ -274,7 +274,7 @@ const ContactPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-10 md:py-14 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 to-primary-800 opacity-[0.97]"></div>
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/7937307/pexels-photo-7937307.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
+                    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/8134820/pexels-photo-8134820.jpeg')] bg-cover bg-center mix-blend-overlay opacity-20"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center text-white">
